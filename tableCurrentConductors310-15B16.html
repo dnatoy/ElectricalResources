@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conductors Ampacities Table</title>
+    <style>
+        table,
+        td {
+            border-collapse: collapse;
+            border: 1px solid gray;
+            padding: 5px;
+            text-align: center;
+            position: relative;
+            outline: 0;
+        }
+
+        th {
+            border: 2px solid black;
+        }
+
+        table {
+            overflow: hidden;
+            border-left: 2pt solid black;
+            border-right: 2pt solid black;
+            border-bottom: 2pt solid black;
+        }
+
+        body:not(.nohover) tbody tr:hover {
+            background-color: #ffa;
+        }
+
+        td:hover::after,
+        thead th:not(:empty):hover::after,
+        td:focus::after,
+        thead th:not(:empty):focus::after {
+            content: '';
+            height: 10000px;
+            left: 0;
+            position: absolute;
+            top: -5000px;
+            width: 100%;
+            z-index: -1;
+        }
+
+        td:hover::after,
+        th:hover::after {
+            background-color: #ffa;
+        }
+
+        td:focus::after,
+        th:focus::after {
+            background-color: lightblue;
+        }
+
+        /* Focus stuff for mobile */
+        td:focus::before,
+        tbody th:focus::before {
+            background-color: lightblue;
+            content: '';
+            height: 100%;
+            top: 0;
+            left: -5000px;
+            position: absolute;
+            width: 10000px;
+            z-index: -1;
+        }
+
+        td.boldText {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        Table 310.15(B)(16) Conductors Ampacities
+    </h2>
+    <h4>
+        Allowable Ampacities of Insulated Conductors Rated Up to and Including 2000 Volts, 60&deg;C through 90&deg;C
+        (140&deg;F
+        through 194&deg;F), Not More Than Three Current-Carrying Conductors in Raceway, Cable, or Earth (Directly
+        Buried), Based on
+        Ambient Temperature of 30&deg;C (86&deg;F)
+    </h4>
+    <table style="width:auto">
+        <tr class="titleBoldLine">
+            <th rowspan="4">Size AWG or kcmil</th>
+            <th colspan="6">Temperature Rating of Conductor (See Table 310.104(A))</th>
+        </tr>
+        <tr>
+            <th>60&deg;C (140&deg;F)</th>
+            <th>75&deg;C (167&deg;F)</th>
+            <th>90&deg;C (194&deg;F)</th>
+            <th>60&deg;C (140&deg;F)</th>
+            <th>75&deg;C (167&deg;F)</th>
+            <th>90&deg;C (194&deg;F)</th>
+        </tr>
+        <tr>
+            <th>Types TW, UF</th>
+            <th>Types RHW, THHW, THW, THWN, XHHW, USE, ZW</th>
+            <th>Types TBS, SA, SIS, FEP, FEPB, MI, RHH, RHW-2, THHN, THHW, THW-2, THWN-2, USE-2, XHH, XHHW, XHHW-2, ZW-2
+            </th>
+            <th>Types TW, UF</th>
+            <th>Types RHW, THHW, THW, THWN, XHHW, USE, ZW</th>
+            <th>Types TBS, SA, SIS, FEP, FEPB, MI, RHH, RHW-2, THHN, THHW, THW-2, THWN-2, USE-2, XHH, XHHW, XHHW-2, ZW-2
+            </th>
+        </tr>
+        <tr>
+            <th colspan="3">COPPER</th>
+            <th colspan="3">ALUMINUM OR COPPER-CLAD ALUMINUM</th>
+        </tr>
+        <tr>
+            <td class="boldText">14</td>
+            <td>15</td>
+            <td>20</td>
+            <td>25</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="boldText">12</td>
+            <td>20</td>
+            <td>25</td>
+            <td>30</td>
+            <td>15</td>
+            <td>20</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td class="boldText">10</td>
+            <td>30</td>
+            <td>35</td>
+            <td>40</td>
+            <td>25</td>
+            <td>30</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td class="boldText">8</td>
+            <td>40</td>
+            <td>50</td>
+            <td>55</td>
+            <td>35</td>
+            <td>40</td>
+            <td>45</td>
+        </tr>
+        <tr style="border-top: 1pt solid black;">
+            <td class="boldText">6</td>
+            <td>55</td>
+            <td>65</td>
+            <td>75</td>
+            <td>40</td>
+            <td>50</td>
+            <td>55</td>
+        </tr>
+        <tr>
+            <td class="boldText">4</td>
+            <td>70</td>
+            <td>85</td>
+            <td>95</td>
+            <td>55</td>
+            <td>65</td>
+            <td>75</td>
+        </tr>
+        <tr>
+            <td class="boldText">3</td>
+            <td>85</td>
+            <td>100</td>
+            <td>115</td>
+            <td>65</td>
+            <td>75</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td class="boldText">2</td>
+            <td>95</td>
+            <td>115</td>
+            <td>130</td>
+            <td>75</td>
+            <td>90</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td class="boldText">1</td>
+            <td>110</td>
+            <td>130</td>
+            <td>145</td>
+            <td>85</td>
+            <td>100</td>
+            <td>115</td>
+        </tr>
+        <tr style="border-top: 1pt solid black;">
+            <td class="boldText">1/0</td>
+            <td>125</td>
+            <td>150</td>
+            <td>170</td>
+            <td>100</td>
+            <td>120</td>
+            <td>135</td>
+        </tr>
+        <tr>
+            <td class="boldText">2/0</td>
+            <td>145</td>
+            <td>175</td>
+            <td>195</td>
+            <td>115</td>
+            <td>135</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td class="boldText">3/0</td>
+            <td>165</td>
+            <td>200</td>
+            <td>225</td>
+            <td>130</td>
+            <td>155</td>
+            <td>175</td>
+        </tr>
+        <tr>
+            <td class="boldText">4/0</td>
+            <td>195</td>
+            <td>230</td>
+            <td>260</td>
+            <td>150</td>
+            <td>180</td>
+            <td>205</td>
+        </tr>
+        <tr style="border-top: 1pt solid black;">
+            <td class="boldText">250</td>
+            <td>215</td>
+            <td>255</td>
+            <td>290</td>
+            <td>170</td>
+            <td>205</td>
+            <td>230</td>
+        </tr>
+        <tr>
+            <td class="boldText">300</td>
+            <td>240</td>
+            <td>285</td>
+            <td>320</td>
+            <td>195</td>
+            <td>230</td>
+            <td>260</td>
+        </tr>
+        <tr>
+            <td class="boldText">350</td>
+            <td>260</td>
+            <td>310</td>
+            <td>350</td>
+            <td>210</td>
+            <td>250</td>
+            <td>280</td>
+        </tr>
+        <tr>
+            <td class="boldText">400</td>
+            <td>280</td>
+            <td>335</td>
+            <td>380</td>
+            <td>225</td>
+            <td>270</td>
+            <td>305</td>
+        </tr>
+        <tr>
+            <td class="boldText">500</td>
+            <td>320</td>
+            <td>380</td>
+            <td>430</td>
+            <td>260</td>
+            <td>310</td>
+            <td>350</td>
+        </tr>
+        <tr style="border-top: 1pt solid black;">
+            <td class="boldText">600</td>
+            <td>350</td>
+            <td>420</td>
+            <td>475</td>
+            <td>285</td>
+            <td>340</td>
+            <td>385</td>
+        </tr>
+        <tr>
+            <td class="boldText">700</td>
+            <td>385</td>
+            <td>460</td>
+            <td>520</td>
+            <td>315</td>
+            <td>375</td>
+            <td>425</td>
+        </tr>
+        <tr>
+            <td class="boldText">750</td>
+            <td>400</td>
+            <td>475</td>
+            <td>535</td>
+            <td>320</td>
+            <td>385</td>
+            <td >435</td>
+        </tr>
+    </table>
+</body>
+
+</html>
